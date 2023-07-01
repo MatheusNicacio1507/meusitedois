@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6; /*cinza claro*/
+}
+
+div#interface {
+    position: relative; /* transforma a div em container*/
+    background-color: #fff; /*branco*/
+    width: 1200px;
+    margin: -23px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /*sombra*/
+    padding: 100px; /*empurra pra dentro*/
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid; /* borda inferior do header*/
+    height: 150px;
+}
+
+header#cabecalho h1{
+    font-family: Arial 12pt;
+    color: #00BFFF;
+    font-size: 28pt;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: Arial 12pt;
+    color: #87CEEB;  /* cinza claro*/
+    padding: 0px;
+    margin-top: 0px;
+}
+
+nav#menu ul{
+    list-style: none; /* remover marcadores da lista*/
+    text-transform: uppercase; /* converter para maiusculas*/
+    position: absolute; /* para que o menu possa ser colocado no topo, é preciso virar absoluto*/
+    top: -3px; /* posicionado ao topo. valor negativo para empurrar alem da borda*/
+    right: 10px;
+    padding: 20px;/* posicionado a direita*/
+}
+
+nav#menu li{
+    display: inline-block; /* colocar os itens lado a lado*/
+    background-color: #00BFFF; /* cor de  fundo - cinza*/
+    padding: 10px; /* aumentar o espaçamento interno caixa cinza*/
+    margin: 2px; /* aumentar o espaçamento externo caixa cinza*/
+    transition: background-color 0.5s; /* tempo da transição do background color*/
+}
+
+/* hover para efeito do mouse ao passar sobre o li*/
+nav#menu li:hover {
+    background-color: #87CEEB; /*cinza escuro*/
+
+}
+nav#menu h1{
+    display: none /* ocultar a tag h1 que está em nav id menu*/
+}
+/* a é o link dentro da nav menu*/
+nav#menu a{
+    color: #fff; /*preto*/
+    text-decoration: none;
+}
+/* ao passar o mouse sobre o link (tag a) */
+nav#menu a:hover{
+    color: #fff; /* branco*/
+    text-decoration: underline; /*sublinhado*/
+}
+
+img#icone {
+    width: 25%;
+    position: absolute;
+    left: 750px;
+    top: 95px;
+}
+
+img#home {
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    border: 8px 5px 8px 5px solid; /* solid hidden dotted dashed double groove ridge insert outset*/
+    box-shadow: 1px 1px 4px black; /* horizontal vertical difusão cor da sombra*/
+    left: 150px;
+    bottom: 3px;
+}
+
+img#soft {
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    border: 8px 5px 8px 5px solid; /* solid hidden dotted dashed double groove ridge insert outset*/
+    box-shadow: 1px 1px 4px black; /* horizontal vertical difusão cor da sombra*/
+    left: 150px;
+    bottom: 3px;
+    }
+
+    img#logo {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    left: 250px;
+    bottom: 3px;
+    }
+
+section#corpo h2{
+    font-size: 13pt;
+    color: #fff;
+    background-color: #87CEEB;
+    padding: 5px 0px 5px 10px;/* top right bottom left*/
+    margin: 10px 0px 10px 0px;
+}
+
+section#corpo h1{
+    font-size: 20pt;
+    color: #fff;
+    background-color: #00BFFF;
+    padding: 5px 0px 5px 10px;/* top right bottom left*/
+    margin: 10px 0px 10px 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* links */
+a {
+    color: #blue; /* cinza*/
+    text-decoration: none; /* remover o sublinhado do link*/
+}
+
+/*hover é pra quando o mouse passar sobre*/
+a:hover {
+    text-decoration: underline;
+}
+
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;/* remove qualquer negrito que exista no texto*/
+    font-size: 13pt;
+    background-color: rgba(255,255,255, 0.7); /*branco c opacidade 70% */
+}
+
+input:hover, textarea:hover {
+    background-color: #ddd;
+}
+
+fieldset {
+    border-color: #00BFFF;
+    margin: 5px;
+
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
